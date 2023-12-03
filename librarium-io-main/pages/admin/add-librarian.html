@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/admin-user-librarian.css" />
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <a href="#" class="logo">
+        <div class="logo-name">Library</div>
+      </a>
+      <ul class="side-menu">
+        <li><a href="../admin/dashboard.html">Dashboard</a></li>
+        <li class="active">
+          <a href="../admin/add-librarian.html">Add Librarian</a>
+        </li>
+        <li><a href="../admin/add-student.html">Add Student</a></li>
+        <li><a href="../admin/add-book.html">Add Book</a></li>
+        <li><a href="../admin/book-report.html">Return Book</a></li>
+        <li><a href="../admin/order.html">Order</a></li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="../../index.html" class="logout">
+            <i class="bx bx-log-out-circle"></i>
+            Logout
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Navbar -->
+      <nav>
+        <i class="bx bx-menu"></i>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+        <a href="#" class="notif">
+          <i class="bx bx-bell"></i>
+          <span class="count">12</span>
+        </a>
+      </nav>
+      <!-- End of Navbar -->
+
+      <main>
+        <div class="header">
+          <div class="left">
+            <h1>Add Librarian</h1>
+            <ul class="breadcrumb">
+              <!-- Breadcrumb can be added here if needed -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pop-up page -->
+        <div class="bottom-data">
+          <div class="orders">
+            <div class="header">
+              <i class="bx bx-receipt"></i>
+              <h3>Librarian Orders</h3>
+              <i class="bx bx-filter"></i>
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="add-item">
+              <button>Add Librarian</button>
+            </div>
+            <div class="modal" id="additemModal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Add New Librarian</h3>
+                <form id="addLibrarianForm">
+                  <div class="form-group">
+                    <label for="librarianID"> Librarian ID </label>
+                    <input name="librarianID" placeholder="ID" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="name"> Name </label>
+                    <input name="name" placeholder="Name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="dob">Date of Birth </label>
+                    <input name="dob" placeholder="DOB" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Librarian Email </label>
+                    <input
+                      name="email"
+                      placeholder="Librarian Email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password </label>
+                    <input name="password" placeholder="Password" required />
+                  </div>
+                  <button type="submit">Add Librarian</button>
+                </form>
+              </div>
+            </div>
+            <!-- End of pop-up page -->
+
+            <!-- Table -->
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Date of Birth</th>
+                  <th>Librarian Email/User</th>
+                  <th>Password</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="librarianTable">
+                <!-- Table content will be dynamically populated -->
+              </tbody>
+            </table>
+            <!-- End Table -->
+          </div>
+        </div>
+      </main>
+      <!-- End Main -->
+    </div>
+    <script src="../../scripts/addlibrarian.js"></script>
+  </body>
+</html>

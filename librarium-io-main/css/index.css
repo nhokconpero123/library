@@ -1,0 +1,77 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #faf9f9;
+  line-height: 1;
+  background-image: url("../images/img.jpg");; /* Apply the background image to the entire body */
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2 {
+  color: #f8f7f7;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(9, 8, 8); /* changing background color of the heading*/
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+.nav-links a {
+  color: #ffffff; /* Change the color to white */
+}
+
+.logo {
+  font-size: 24px;
+}
+
+/* Hero Section */
+#hero {
+  /* Remove the background properties from here */
+  color: #f7f4f4;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-form {
+  margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-search {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+}

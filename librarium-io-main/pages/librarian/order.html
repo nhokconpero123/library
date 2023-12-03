@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/admin-user-librarian.css" /> <!-- fix the link to css in the user book report.-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <a href="#" class="logo">
+      <div class="logo-name">Libary</div>
+        </a>
+          <ul class="side-menu">
+            <li><a href="../librarian/userpage.html"></i>User</a></li><!-- fix href link for side bar-->
+            <li><a href="../librarian/add-book.html"></i>Book Report </a></li><!-- fix href link for side bar-->
+            <li><a href="../librarian/add-student.html"></i>Add student </a></li><!-- fix href link for side bar-->
+            <li><a href="../librarian/add-book.html"></i>Add Book</a></li><!-- fix href link for side bar-->
+            <li class="active"><a href="../librarian/order.html"></i>Order</a></li><!-- fix href link for side bar-->
+          </ul>
+          <ul class="side-menu">
+            <li>
+              <a href="../../index.html" class="logout"><!-- fix href link for side bar-->
+                <i class="bx bx-log-out-circle"></i>
+                Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- End of Sidebar -->
+    
+   
+    <div class="content">
+      <!-- Navbar -->
+      <nav>
+        <i class="bx bx-menu"></i>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+        <a href="#" class="notif">
+          <i class="bx bx-bell"></i>
+          <span class="count">12</span>
+        </a>
+      </nav>
+
+      <!-- End of Navbar -->
+      
+      <!-- Main Content -->
+      <main>
+        <div class="book-container">
+          <img class="book-image" src="../../images/book_cover.webp" alt="Book Cover"><!-- fixing the imange in the order-->
+          <div class="book-details">
+            <h2>Book Title</h2>
+            <p>Author: Author Name</p>
+            <p>Genre: Fiction</p>
+            <p>Price: $19.99</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <button class="checkout-button" onclick="checkout()">Checkout</button>
+        </div>
+      </main>
+      <!-- End Main-->
+    </div>
+    <script src="../../scripts/admin-user-librarian.js"></script>
+    <script>
+      //TODO: Implement checkout functionality in admin-user-librarian.js and remove this script tag
+      function checkout() {
+          // You can add your checkout logic here
+          alert('Checkout button clicked! Implement your checkout functionality.');
+      }
+    </script>
+  </body>
+</html>

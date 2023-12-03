@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/admin-user-librarian.css" /> <!-- fix the link to css in the user book report.-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <a href="#" class="logo">
+      <div class="logo-name">Libary</div>
+        </a>
+          <ul class="side-menu">
+            <li class="active"><a href="../librarian/userpage.html"></i>User</a></li><!-- fix href link for side bar-->
+            <li><a href="../librarian/book-report.html"></i>Book Report </a></li><!-- fix href link for side bar-->
+            <li><a href="../librarian/add-student.html"></i>Add student </a></li><!-- fix href link for side bar-->
+            <li><a href="../librarian/add-book.html"></i>Add Book</a></li><!-- fix href link for side bar-->
+            <li><a href="../librarian/order.html"></i>Order</a></li><!-- fix href link for side bar-->
+          </ul>
+          <ul class="side-menu">
+            <li>
+              <a href="../../index.html" class="logout"><!-- fix href link for side bar-->
+                <i class="bx bx-log-out-circle"></i>
+                Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- End of Sidebar -->
+    
+   
+    <div class="content">
+      <!-- Navbar -->
+      <nav>
+        <i class="bx bx-menu"></i>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+        <a href="#" class="notif">
+          <i class="bx bx-bell"></i>
+          <span class="count">12</span>
+        </a>
+      </nav>
+
+      <!-- End of Navbar -->
+      
+       <!-- Main Content -->
+    <main>
+      <div class="user-container">
+          <h1>User Profile</h1>
+          <div class="user-details">
+              <div class="avatar">
+                <img src="../../images/image.png" alt="Profile Picture">
+              </div>
+              <div class="info">
+                <!-- Your existing content -->
+                <p><strong>Name:</strong> John Doe <button class="update-button">Update</button></p>
+                <p><strong>Email:</strong> johndoe@example.com <button class="update-button">Update</button></p>
+                <p><strong>Date of birth</strong> January 1, 2020 <button class="update-button">Update</button></p>
+                <p><strong>Location:</strong> City, Country <button class="update-button">Update</button></p>
+                <p><strong>Member Since:</strong> January 1, 2020</p>
+                <p><strong>Username:</strong> johndoe123</p>
+                <!-- Add more details as needed -->
+              </div>
+          </div>
+      </div>
+        <div class="bottom-data">
+          <div class="orders">
+            <div class="header">
+              <i class="bx bx-receipt"></i>
+              
+              <h3>Recent Orders</h3>
+              <i class="bx bx-filter"></i>
+              <i class="bx bx-search"></i>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Book</th>
+                  <th>Order Date</th>
+                  <th>Return Date</th>
+                  <th>Status</th>        
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>14-08-2023</td>
+                  <td>15-09-2023</td>
+                  <td><span class="status completed">Returned</span></td>
+                </tr>
+                <tr>
+                  <td>John Doe</td>
+                  <td>14-08-2023</td>
+                  <td></td>
+                  <td><span class="status Reverse">Reserve</span></td>
+                </tr>
+                <tr>
+                  <td>John Doe</td>
+                  <td>14-08-2023</td>
+                  <td></td>
+                  <td><span class="status Borrow">Borrow</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>      
+    </main>
+      <!-- End Main-->
+    </div>
+    <script src="../../scripts/admin-user-librarian.js"></script>
+  </body>
+</html>

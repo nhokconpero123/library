@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/admin-user-librarian.css" /> <!-- fix the link to css in the user book report.-->
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <a href="#" class="logo">
+        <div class="logo-name">Library</div>
+      </a>
+      <ul class="side-menu">
+        <li><a href="../admin/dashboard.html">Dashboard</a></li><!--fix href link for side bar-->
+        <li><a href="../admin/add-librarian.html">Add Librarian</a></li><!--fix href link for side bar-->
+        <li><a href="../admin/add-student.html">Add Student</a></li><!--fix href link for side bar-->
+        <li class="active"><a href="../admin/add-book.html">Add Book</a></li><!--fix href link for side bar-->
+        <li><a href="../admin/book-report.html">Book Report</a></li><!--fix href link for side bar-->
+        <li><a href="../admin/order.html"></i>Order</a></li><!--fix href link for side bar-->
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="../../index.html" class="logout"><!--fix href link for side bar-->
+            <i class="bx bx-log-out-circle"></i>
+            Logout
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End of Sidebar -->
+
+    <!-- Navbar -->
+    <div class="content">
+      <nav>
+        <i class="bx bx-menu"></i>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+        <a href="#" class="notif">
+          <i class="bx bx-bell"></i>
+          <span class="count">12</span>
+        </a>
+      </nav>
+
+      <!-- End of Navbar -->
+      <!-- Main Content -->
+      <main>
+        <div class="header">
+          <div class="left">
+            <h1>Add Books</h1>
+            <ul class="breadcrumb"></ul>
+          </div>
+        </div>
+
+        <!-- Pop up page -->
+        <div class="bottom-data">
+          <div class="orders">
+            <div class="header">
+              <i class="bx bx-receipt"></i>
+              <h3>Books Orders</h3>
+              <i class="bx bx-filter"></i>
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="add-item">
+              <button>Add Book</button>
+            </div>
+            <div class="modal" id="additemModal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Add New Book</h3>
+                <form id="addBookForm">
+                  <div class="form-group">
+                    <label for="id">ID </label>
+                    <input name="id" placeholder="ID" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Book name </label>
+                    <input name="name" placeholder="Name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="author">author name </label>
+                    <input name="author" placeholder="Author" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="category">Category </label>
+                    <input name="category" placeholder="Category" required />
+                  </div>
+                  <button type="submit">Add Student</button>
+                </form>
+              </div>
+            </div>
+            <!-- End of pop up page -->
+
+            <!-- Table -->
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Author</th>
+                  <th>Category</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="bookTable"></tbody>
+            </table>
+            <!-- End Table -->
+          </div>
+        </div>
+      </main>
+      <!-- End Main -->
+    </div>
+    <script src="../../scripts/addbook.js"></script>
+  </body>
+</html>
